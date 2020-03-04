@@ -1,0 +1,701 @@
+// Microsoft Visual C++ generated resource script.
+//
+#pragma code_page(65001)
+
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\ToolKit.rc2""  // 闂?Microsoft Visual C++ 缂傚倹鐗炵欢顐︽儍閸曨喚銈繝?\n"
+    "#include ""l.CHS\\afxres.rc""      // 闁哄秴娲ら崳顖滅磼閸曨亝顐?\n"
+    "#include ""l.CHS\\afxprint.rc""    // 闁瑰灚鎸稿畵?闁瑰灚鎸稿畵鍐╋紣閸曨噮娼旈悹褍瀚花?\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""        // MFC 闁告梻鍠曢崗姗€宕犻崫鍕闁硅矇鍐ㄧ厬闁哄銈囥偒婵?\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ToolKit.ico"
+
+IDR_ToolKitTYPE         ICON                    "res\\ToolKitDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_TOOL_HEX2STRING
+    BUTTON      ID_TOOL_CHECKCODE
+    BUTTON      ID_TOOL_TXT2EXCEL
+    BUTTON      ID_TOOL_STRINGMERGE
+    BUTTON      ID_TOOL_EXCELMERGE
+    BUTTON      ID_TOOL_EXCELPRINT
+    BUTTON      ID_TOOL_FILERENAME
+    SEPARATOR
+    BUTTON      ID_HELP_UPDATE
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "16进制与字符转换",                   ID_TOOL_HEX2STRING
+        MENUITEM "国网校验码计算",                     ID_TOOL_CHECKCODE
+        MENUITEM "Txt与Excel转换",                 ID_TOOL_TXT2EXCEL
+        MENUITEM "多行字符串合并",                     ID_TOOL_STRINGMERGE
+        MENUITEM "多个Excel文件合并",                 ID_TOOL_EXCELMERGE
+        MENUITEM "Excel模板批量打印",                 ID_TOOL_EXCELPRINT
+        MENUITEM "文件批量重命名",                     ID_TOOL_FILERENAME
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "软件更新",                        ID_HELP_UPDATE
+        MENUITEM "关于 ToolKit(&A)...",           ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "关于 ToolKit(&A)...",           ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 71
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 ToolKit"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "ToolKit, V 1.0.0.9",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2019",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,50,50,14,WS_GROUP
+    LTEXT           "Zaxai.Com All Rights Reserved",IDC_STATIC,42,38,114,8
+END
+
+IDD_HEX2STRING DIALOGEX 0, 0, 309, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "16进制与字符转换"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "输入",IDC_STATIC,7,7,231,96
+    EDITTEXT        IDC_EDIT_INPUT,14,16,218,78,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN
+    GROUPBOX        "输出",IDC_STATIC,7,103,231,96
+    EDITTEXT        IDC_EDIT_OUTPUT,14,113,218,78,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN
+    CONTROL         "输入去空格",IDC_CHECK_REMOVESPACE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,246,16,50,10
+    PUSHBUTTON      "16进制转字符",IDC_BUTTON_HEX2STRING,246,32,54,14
+    PUSHBUTTON      "字符转16进制",IDC_BUTTON_STRING2HEX,246,50,54,14
+END
+
+IDD_CHECKCODE DIALOGEX 0, 0, 309, 201
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "国网校验码计算"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_INPUT,7,19,295,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_NUM,7,49,132,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_OUTPUT,7,79,295,115,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "初始条码号(不含校验码)",IDC_STATIC,7,7,86,8
+    LTEXT           "条码数量",IDC_STATIC,7,37,33,8
+    LTEXT           "输出",IDC_STATIC,7,67,17,8
+    PUSHBUTTON      "计算",IDC_BUTTON_CALCULATE,252,49,50,14
+END
+
+IDD_TXT2EXCEL DIALOGEX 0, 0, 309, 244
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Txt与Excel转换"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "输入",IDC_STATIC,7,7,295,72
+    LTEXT           "格式",IDC_STATIC,12,19,17,8
+    COMBOBOX        IDC_COMBO_INPUTFORMAT,12,31,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分隔符",IDC_STATIC,68,19,25,8
+    EDITTEXT        IDC_EDIT_INPUTSPLIT,68,29,40,14,ES_AUTOHSCROLL
+    LTEXT           "路径",IDC_STATIC,12,47,17,8
+    EDITTEXT        IDC_EDIT_INPUTPATH,12,59,285,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN,247,29,50,14
+    CONTROL         "",IDC_LIST_SHOW,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,83,295,80
+    GROUPBOX        "输出",IDC_STATIC,7,165,295,72
+    LTEXT           "格式",IDC_STATIC,12,178,17,8
+    COMBOBOX        IDC_COMBO_OUTPUTFORMAT,12,190,48,30,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "分隔符",IDC_STATIC,68,178,25,8
+    EDITTEXT        IDC_EDIT_OUTPUTSPLIT,68,188,40,14,ES_AUTOHSCROLL
+    LTEXT           "路径",IDC_STATIC,12,206,17,8
+    EDITTEXT        IDC_EDIT_OUTPUTPATH,12,218,285,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "转换",IDC_BUTTON_CONVERT,247,188,50,14
+END
+
+IDD_STRINGMERGE DIALOGEX 0, 0, 403, 210
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "多行字符串合并"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "输入",IDC_STATIC,7,7,163,196
+    EDITTEXT        IDC_EDIT_INPUT,14,20,150,173,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    GROUPBOX        "输出",IDC_STATIC,233,7,163,196
+    EDITTEXT        IDC_EDIT_OUTPUT,241,20,150,173,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "分隔符",IDC_STATIC,189,36,25,8
+    EDITTEXT        IDC_EDIT_SPLIT,181,46,40,14,ES_AUTOHSCROLL
+    LTEXT           "行基数",IDC_STATIC,185,68,25,8
+    EDITTEXT        IDC_EDIT_BASEROW,181,78,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "合并",IDC_BUTTON_MERGE,177,108,50,14
+END
+
+IDD_EXCELMERGE DIALOGEX 0, 0, 309, 249
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "多个Excel文件合并"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "输入",IDC_STATIC,7,7,295,50
+    LTEXT           "路径",IDC_STATIC,12,21,17,8
+    EDITTEXT        IDC_EDIT_INPUTPATH,12,33,285,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "去首行",IDC_CHECK_REMOVEFIRSTROW,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,205,19,40,10
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN,247,15,50,14
+    LISTBOX         IDC_LIST_SHOW,7,62,295,124,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "输出",IDC_STATIC,7,192,295,50
+    LTEXT           "路径",IDC_STATIC,12,206,17,8
+    EDITTEXT        IDC_EDIT_OUTPUTPATH,12,218,285,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "合并",IDC_BUTTON_MERGE,247,200,50,14
+END
+
+IDD_EXCELPRINT DIALOGEX 0, 0, 309, 176
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Excel模板批量打印"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_ROW,45,54,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_COLUMN,45,78,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_COPIES,45,139,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_INPUT,110,48,116,114,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_PATH,7,14,226,14,ES_AUTOHSCROLL | ES_READONLY
+    GROUPBOX        "单元格",IDC_STATIC,7,34,90,74
+    GROUPBOX        "修改内容",IDC_STATIC,102,34,131,135
+    GROUPBOX        "打印份数",IDC_STATIC,7,120,90,49
+    LTEXT           "行",IDC_STATIC,20,54,9,8
+    LTEXT           "列",IDC_STATIC,20,78,9,8
+    LTEXT           "份数",IDC_STATIC,20,139,17,8
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN,252,14,50,14
+    PUSHBUTTON      "批量打印",IDC_BUTTON_PRINT,252,34,50,14
+END
+
+IDD_FILERENAME DIALOGEX 0, 0, 309, 237
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件批量重命名"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PATH,7,14,226,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "打开",IDC_BUTTON_OPEN,252,14,50,14
+    LTEXT           "正则表达式",IDC_STATIC,7,43,41,8
+    EDITTEXT        IDC_EDIT_REGEX,53,37,180,14,ES_AUTOHSCROLL
+    LTEXT           "替换文本",IDC_STATIC,7,66,33,8
+    EDITTEXT        IDC_EDIT_REPLACE,53,60,180,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_LIST_SHOW,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,83,295,147
+    PUSHBUTTON      "批量重命名",IDC_BUTTON_RENAME,252,60,50,14,WS_DISABLED
+    PUSHBUTTON      "刷新文件夹",IDC_BUTTON_REFRESH,251,37,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,9
+ PRODUCTVERSION 1,0,0,9
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "Zaxai.Com"
+            VALUE "FileDescription", "ToolKit"
+            VALUE "FileVersion", "1.0.0.9"
+            VALUE "InternalName", "ToolKit.exe"
+            VALUE "LegalCopyright", "(C)最赛 保留所有权利"
+            VALUE "OriginalFilename", "ToolKit.exe"
+            VALUE "ProductName", "ToolKit"
+            VALUE "ProductVersion", "1.0.0.9"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_HEX2STRING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 199
+    END
+
+    IDD_CHECKCODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_TXT2EXCEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 237
+    END
+
+    IDD_STRINGMERGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 396
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 203
+    END
+
+    IDD_EXCELMERGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_EXCELPRINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_FILERENAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 230
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_HEX2STRING AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_CHECKCODE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TXT2EXCEL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_STRINGMERGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EXCELMERGE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EXCELPRINT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_FILERENAME AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "ToolKit\n\nToolKit\n\n\nToolKit.Document\nToolKit.Document"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "ToolKit"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+    ID_INDICATOR_PROGRESS   " "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOL_HEX2STRING      "16进制与字符转换\n16进制与字符转换"
+    ID_TOOL_CHECKCODE       "国网校验码计算\n国网校验码计算"
+    ID_TOOL_TXT2EXCEL       "Txt与Excel转换\nTxt与Excel转换"
+    ID_TOOL_STRINGMERGE     "多行字符串合并\n多行字符串合并"
+    ID_TOOL_EXCELMERGE      "多个Excel文件合并\n多个Excel文件合并"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOOL_EXCELPRINT      "Excel模板批量打印\nExcel模板批量打印"
+    ID_TOOL_FILERENAME      "文件批量重命名\n文件批量重命名"
+    ID_HELP_UPDATE          "软件更新\n软件更新"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\ToolKit.rc2"  // 闂?Microsoft Visual C++ 缂傛牞绶惃鍕カ濠?
+#include "l.CHS\afxres.rc"      // 閺嶅洤鍣紒鍕
+#include "l.CHS\afxprint.rc"    // 閹垫挸宓?閹垫挸宓冩０鍕潔鐠у嫭绨?
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"        // MFC 閸旂喕鍏橀崠鍝勬嫲閹貉冨煑閺壜ょカ濠?
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
