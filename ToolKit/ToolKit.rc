@@ -230,8 +230,8 @@ CAPTION "关于 ToolKit"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
-    LTEXT           "ToolKit, V 1.0.0.9",IDC_STATIC,42,14,114,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2019",IDC_STATIC,42,26,114,8
+    LTEXT           "ToolKit, V 1.1.0.10",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright © Since 2009",IDC_STATIC,42,26,114,8
     DEFPUSHBUTTON   "确定",IDOK,113,50,50,14,WS_GROUP
     LTEXT           "Zaxai.Com All Rights Reserved",IDC_STATIC,42,38,114,8
 END
@@ -364,8 +364,8 @@ END
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 1,0,0,9
- PRODUCTVERSION 1,0,0,9
+ FILEVERSION 1,1,0,10
+ PRODUCTVERSION 1,1,0,10
  FILEFLAGSMASK 0x3fL
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -382,12 +382,12 @@ BEGIN
         BEGIN
             VALUE "CompanyName", "Zaxai.Com"
             VALUE "FileDescription", "ToolKit"
-            VALUE "FileVersion", "1.0.0.9"
+            VALUE "FileVersion", "1.1.0.10"
             VALUE "InternalName", "ToolKit.exe"
-            VALUE "LegalCopyright", "(C)最赛 保留所有权利"
+            VALUE "LegalCopyright", "©最赛 保留所有权利"
             VALUE "OriginalFilename", "ToolKit.exe"
             VALUE "ProductName", "ToolKit"
-            VALUE "ProductVersion", "1.0.0.9"
+            VALUE "ProductVersion", "1.1.0.10"
         END
     END
     BLOCK "VarFileInfo"
@@ -688,11 +688,11 @@ END
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE 4, 2
-#include "res\ToolKit.rc2"  // 闂?Microsoft Visual C++ 缂傛牞绶惃鍕カ濠?
-#include "l.CHS\afxres.rc"      // 閺嶅洤鍣紒鍕
-#include "l.CHS\afxprint.rc"    // 閹垫挸宓?閹垫挸宓冩０鍕潔鐠у嫭绨?
+#include "res\ToolKit.rc2"  // 闂?Microsoft Visual C++ 缂傚倹鐗炵欢顐︽儍閸曨喚銈繝?
+#include "l.CHS\afxres.rc"      // 闁哄秴娲ら崳顖滅磼閸曨亝顐?
+#include "l.CHS\afxprint.rc"    // 闁瑰灚鎸稿畵?闁瑰灚鎸稿畵鍐╋紣閸曨噮娼旈悹褍瀚花?
 #if !defined(_AFXDLL)
-#include "l.CHS\afxribbon.rc"        // MFC 閸旂喕鍏橀崠鍝勬嫲閹貉冨煑閺壜ょカ濠?
+#include "l.CHS\afxribbon.rc"        // MFC 闁告梻鍠曢崗姗€宕犻崫鍕闁硅矇鍐ㄧ厬闁哄銈囥偒婵?
 #endif
 #endif
 

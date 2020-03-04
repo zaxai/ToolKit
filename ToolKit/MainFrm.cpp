@@ -458,5 +458,5 @@ void CMainFrame::OnToolFilerename()
 void CMainFrame::OnHelpUpdate()
 {
 	// TODO: 在此添加命令处理程序代码
-	ShellExecute(NULL, _T("open"), _T("http://www.zaxai.com/download/toolkit/"), NULL, NULL, SW_SHOW);
+	ShellExecute(NULL, _T("open"), _T("http://www.zaxai.com/resource.php?resid=187"), NULL, NULL, SW_SHOW);
 }
